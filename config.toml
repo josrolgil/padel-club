@@ -2,7 +2,7 @@ baseURL = "https://josrolgil.github.io/"
 languageCode = "en-us"
 title = "YouPadelCenter"
 theme = "alpha-church"
-publishDir = "docs"
+publishDir = "public"
 rssLimit = 5
 paginate = 4
 
