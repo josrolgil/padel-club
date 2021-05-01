@@ -1,8 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://josrolgil.github.io/"
 languageCode = "en-us"
-title = "Alpha Church"
+title = "YouPadelCenter"
 theme = "alpha-church"
-
+publishDir = "docs"
 rssLimit = 5
 paginate = 4
 
@@ -25,66 +25,42 @@ unsafe = true
 #Use weight= to specify the order of menu items, and parent= to create a submenu item.
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "Inicio"
     url = "/"
     weight = 1
 
   [[menu.main]]
-    name = "About"
-    url = "/about"
+    name = "El club"
+    #url = "/club"
     weight = 2
 
   [[menu.main]]
-    name = "About Us"
-    parent = "About"
-    url = "/about"
+    name = "Instalaciones"
+    parent = "El club"
+    url = "/instalaciones"
     weight = 1
 
   [[menu.main]]
-    name = "Leaders"
-    parent = "About"
-    url = "/leaders"
+    name = "Horarios"
+    parent = "El club"
+    url = "/horarios"
     weight = 2
 
   [[menu.main]]
-    name = "Resources"
+    name = "Noticias"
     url = "#"
     weight = 3
 
   [[menu.main]]
-    name = "Sermons"
-    url = "/sermons"
-    parent = "Resources"
-    weight = 1
-
-  [[menu.main]]
-    name = "Preachers"
-    url = "/preachers"
-    parent = "Sermons"
-    weight = 1
-
-  [[menu.main]]
-    name = "Best Ever"
-    url = "#"
-    parent = "Sermons"
-    weight = 1
-
-  [[menu.main]]
-    name = "Blog"
-    url = "/posts"
-    parent = "Resources"
-    weight = 2
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact"
+    name = "Contacto"
+    url = "/contacto"
     weight = 4
 
 # Paramaters for the whole site
 [params]
-  title = "Alpha Church"
-  subtitle = "Another Church Theme"
-  author = "Daniel Saunders"
+  title = "YouPadel Center Córdoba"
+  subtitle = "Tu club de pádel en Córdoba"
+  author = "LittleCom"
   keywords = ["theme", "hugo", "podcast"]
   languageCode = "en" # For accessibility this needs to be set. You can find all language codes at https://www.w3schools.com/tags/ref_language_codes.asp
 
@@ -95,16 +71,17 @@ unsafe = true
   customCSS = ["example.css"]
 
   [params.banner]
-    image = "img/banner.jpg"
+    image = "/img/banner.jpg"
 
 #  [params.style]
 #    googleFonts = ["Cardo", "Crimson+Text", "Merriweather", "Playfair+Display:400,700", "Roboto+Slab"]
 
   [params.podcast]
     title = "Listen to Alpha Church"
+    subtitle = ""
     summary = "Alpha-Church sermons, talks, messages—podcasted."
     email = "test@example.com"
-    copyright = "The files in the podcast are in the public domain."
+    copyright = "Podcast: [CC0 (public domain)](//creativecommons.org/publicdomain/zero/1.0/)"
     image = "img/podcast-cover.jpg"
     category = "Religion & Spirituality"
     sub_category = "Christianity"
@@ -114,9 +91,9 @@ unsafe = true
   [params.map]
     service = "osm" #"osm" for OpenStreetMaps, "google" for Google Maps, or "mapbox" for Mapbox, see SETUP.md
     # For Open Street Map widgets
-    latitude = "48.8530"
-    longitude = "2.3498"
-    zoom = "18"
+    latitude = "37.8481"
+    longitude = "-4.7984"
+    zoom = "15"
     # If you want to use google maps you'll need an API Key from Google https://developers.google.com/maps/documentation/embed/get-api-key
     #service = "google"
     #api_key = "XXXXXXXX"
@@ -142,7 +119,7 @@ unsafe = true
     [params.footer]
       copyright = ["[CC0 (public domain)](//creativecommons.org/publicdomain/zero/1.0/)",
                    "Design: [HTML5 UP](//html5up.net/alpha)",
-                   "[Hugo Port](//gohugo.io) by [Daniel Saunders](//github.com/funkydan2)"
+                   "[Hugo Port](//gohugo.io) by [J.M. Roldán](//www.linkedin.com/in/jose-maria-roldan-gil)"
                   ]
 
     [[params.links]]
